@@ -2,7 +2,6 @@ package cz.fi.muni.carshop;
 
 import static org.hamcrest.Matchers.hasKey;
 import static org.hamcrest.Matchers.hasSize;
-import static org.junit.Assert.assertThat;
 import static org.junit.Assert.assertTrue;
 
 import java.awt.Color;
@@ -18,10 +17,11 @@ import cz.fi.muni.carshop.entities.Car;
 import cz.fi.muni.carshop.enums.CarTypes;
 import cz.fi.muni.carshop.services.CarShopStorageService;
 import cz.fi.muni.carshop.services.CarShopStorageServiceImpl;
+import static org.hamcrest.MatcherAssert.assertThat;
 
 public class CarShopStorageServiceTest {
 
-	private CarShopStorageService service = new CarShopStorageServiceImpl();
+	private final CarShopStorageService service = new CarShopStorageServiceImpl();
 
 	@Rule
 	public ExpectedException thrown = ExpectedException.none();
