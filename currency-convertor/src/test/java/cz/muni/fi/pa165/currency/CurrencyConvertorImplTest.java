@@ -35,6 +35,8 @@ public class CurrencyConvertorImplTest {
         // Don't forget to test border values and proper rounding.
         when(exchangeRateTable.getExchangeRate(CZK, IDR))
                 .thenReturn(new BigDecimal("0.1"));
+        
+        
         assertEquals(new BigDecimal("1.00"), currencyConvertor.convert(CZK, IDR, new BigDecimal("10.050")));
         assertEquals(new BigDecimal("1.01"), currencyConvertor.convert(CZK, IDR, new BigDecimal("10.051")));
         assertEquals(new BigDecimal("1.01"), currencyConvertor.convert(CZK, IDR, new BigDecimal("10.149")));
