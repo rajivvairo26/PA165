@@ -79,7 +79,7 @@ public class CurrencyConvertorImplTest {
                 .thenThrow(UnknownExchangeRateException.class);
         expectedException.expect(UnknownExchangeRateException.class);
         currencyConvertor.convert(CZK, IDR, BigDecimal.ONE);
-         //fail("Test is not implemented yet.");
+   
     }
 
 }
