@@ -16,8 +16,8 @@ public interface ExchangeRateTable {
      * of units in target currency which corresponds to one unit in source
      * currency.
      *
-     * <p>If source currency is EUR and target currency is CZK and current
-     * exchange rate is 25 CZK for 1 EUR, 25 is returned<p>
+     * <p>If source currency is CZK and target currency is IDR and current
+     * exchange rate is 675 IDR for 1 CZK, 675 is returned<p>
      *
      * @param sourceCurrency source currency
      * @param targetCurrency target currency
