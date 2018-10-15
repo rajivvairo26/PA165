@@ -13,9 +13,9 @@ import org.aspectj.lang.annotation.Aspect;
 
 @Named
 @Aspect
-public class loggingAspect {
+public class LoggingAspect {
     @Around("execution(public * *(..))")
-    public Object logMethodCall(ProceedingJoinPoint joinPoint) throws Throwable {
+    public Object LogMethodCall(ProceedingJoinPoint joinPoint) throws Throwable {
         
         System.err.println("Calling For Method: "
                 + joinPoint.getSignature());

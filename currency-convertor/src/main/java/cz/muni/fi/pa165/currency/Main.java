@@ -1,4 +1,4 @@
-
+////////
 package cz.muni.fi.pa165.currency;
 
 import java.math.BigDecimal;
