@@ -10,6 +10,6 @@ package cz.fi.muni.pa165.entity;
  * @author xrajivv
  */
 public enum Color {
-    
+
     BLACK
 }
