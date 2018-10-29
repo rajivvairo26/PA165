@@ -40,7 +40,7 @@ public class MainJavaSe {
 		c1.setName("Electronics");
 		Category c2=new Category();
 		c2.setName("Musical");
-		emWork.persist(c1);
+		
 		emWork.persist(c2);
 		
 		emWork.getTransaction().commit();
